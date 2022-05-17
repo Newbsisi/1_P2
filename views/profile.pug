@@ -1,0 +1,46 @@
+doctype html
+
+block content
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        title AAU buy &amp; sell books
+        link(rel='stylesheet', href='/stylesheets/style1.css')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+    body
+        h3 Profile
+        label(for='Name') Name
+        input#Name(type='text')
+        label(for='Lastname') Lastname
+        input#Lastname(type='text')
+        label(for='Email') Email
+        input#Email(type='text')
+        label(for='Phone-number') Phone-number
+        input#Phone-number(type='text')
+
+
+
+        .SearchBarSideWays
+            img(src='/images/AAUlogo.png', alt='AAULOGO', style='width:100px;height:100px;')
+            a.big(href='/views/searchSide.pug') Go back
+            a(href='https://www.cph.aau.dk/kontakt/') Contact
+            a.big(href='/views/submitForm.pug') Submit
+
+
+        .box2
+            label(for='About') About
+            input#About(type='text', style='width:500px;height:250px;')
+
+
+
+
+
+
+
+
+
+
+
+
+
+

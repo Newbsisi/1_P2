@@ -1,0 +1,103 @@
+
+h1 {
+  color: ghostwhite;
+  position: center;
+}
+h2 {
+  position: center;
+  text-align: center;
+}
+.box .container-1 input{
+  width: 100%;
+  height: 50px;
+  border-radius: .5em;
+}
+.box {
+  margin: 20px auto;
+  padding: 10px;
+  max-width: 800px;
+  text-align: center;
+
+
+}
+
+
+.box2{
+  margin: 20px auto;
+  padding: 10px;
+  max-width: 1200px;
+  text-align: left;
+}
+
+
+
+td, th {
+  border: 1px solid;
+  text-align: left;
+  padding: 8px;
+}
+
+
+#siteheader{
+  background-image:url("books2.jpg");
+  width: 1175px;
+  height: 200px;
+  /*margin: 100px auto;
+  background-size: 100%;
+  font-size: 35px;
+  text-align: center;*/
+  top:1rem;
+}
+
+
+body {
+  /*background-image: url("AAUlogoPaint.png");*/
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-x: 40rem;
+  /*overflow: hidden;*/
+  padding-left: 250px;
+  background-color: whitesmoke;
+
+}
+.SearchBarSideWays {
+  height: 100%;
+  position: fixed;
+  padding-left:1rem;
+  top: 0;
+  z-index: 1;
+  padding-top: 20px;
+  left: 0;
+  overflow-x: hidden;
+  background-color:ghostwhite;
+  opacity:.8;
+}
+
+.SearchBarSideWays a:hover{
+  color: blueviolet;
+}
+.SearchBarSideWays a{
+  padding: .0rem .1rem .5rem;
+  display: flex;
+  color: blue;
+  text-decoration: none;
+}
+label{
+  display: block;
+
+}
+input[type='submit'],
+label{
+  margin-top: 1rem;
+}
+.main_textbox{
+  width:800px;
+  margin: 100px auto;
+  /*background: azure;*/
+  text-align: left;
+  padding: 10px;
+  opacity:.8;
+}
+
+
+* {box-sizing: border-box;}
