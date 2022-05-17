@@ -1,0 +1,33 @@
+doctype html
+
+block content
+
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        title AAU-BOOKS
+        link(rel='stylesheet', href='/stylesheets/style1.css')
+        style.
+    body
+        h4  Submitform
+        div(submitform='')
+            label(for='Name') Name
+            input(name='', type='text')
+            label(for='Desription')  Despription
+            input#desription(type='text')
+            label(for='Price')  Price in DKK
+            input#price(type='text')
+            label(for='con')  Condition
+            input#con(type='text')
+            label(for='pub') Publisher (year of release too)
+            input#pub(type='text')
+            form(method= 'get' , action='/submit')
+            form#uploadbanner(enctype='multipart/form-data', method='post', action='#')
+                input#fileupload(name='myfile', type='file')
+            button(type='submit', onclick='Submit')  Submit
+        .SearchBarSideWays
+            img(src='/images/AAUlogo.png', alt='AAULOGO', style='width:100px;height:100px;', ¨='')
+            label
+                input(type='text', placeholder='Search..')
+            a(href='https://www.cph.aau.dk/kontakt/') Contact
+            a(href='./views/service.pug') About The Service
