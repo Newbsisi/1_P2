@@ -9,8 +9,6 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
-
-
  //MongoDB connection
 var mongoose = require('mongoose');
 var dev_db_url = 'mongodb+srv://Gruppe4:p2gruppe@index-books.pufx4.mongodb.net/Book_Data_Base?retryWrites=true&w=majority'
@@ -55,5 +53,13 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+const app1 = new Realm.App({ id: "<Your App ID>" });
+const credentials = Realm.Credentials.anonymous();
+try {
+  const user = await app1.logIn(credentials);
+} catch(err) {
+  console.error("Failed to log in", err);
+}
 
 module.exports = app;

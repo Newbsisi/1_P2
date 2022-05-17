@@ -8,13 +8,14 @@ html(lang='en')
         link(rel='stylesheet', href='/stylesheets/style1.css')
         meta(name='viewport', content='width=device-width, initial-scale=1')
     body
+        script(src='/javascripts/script1.js')
         h2 AAU k&oslash;b og salg af b&oslash;ger
         .box
             .container-1
                 form.search(action='/models/books', method='GET')
                 label
-                    input(type='text', placeholder='Search...', name='resName')
-                    button(type='button', onclick='') Search
+                    input#searchTerm(type='text', placeholder='Search...', name='resName')
+                    button(type='button', onclick='searchALL()') Search
 
         .SearchBarSideWays
             img(src='/images/AAUlogo.png', alt='AAULOGO', style='width:100px;height:100px;')
